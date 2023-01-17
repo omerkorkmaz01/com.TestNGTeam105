@@ -2,30 +2,25 @@
 
 <suite name="Method calistirma">
     <!-- Method'lari secerken, bir class icerisindeki
-- ozellikle calistirilacak method'lari ifade etmek istersek include
-- ozellikle calistirilmayacak method'lri ifade etmek istersek exclude kullaniriz
-    -->
+        - ozellikle calistirilacak method'lari ifade etmek istersek include
+        - ozellikle calistirilmayacak method'lari ifade etmek istersek exclude kullaniriz
+         -->
     <test name="Belirli methodlari calistirma">
         <classes>
             <class name="tests.day15_SoftAssert.C04_NegativeLoginTesti">
                 <methods>
-                    <!--day15_SoftAssert.C04_NegativeLoginTesti class'inda istedigimiz method'u
-                    calistirmak icin -->
+                    <!-- day15_SoftAssert.C04_NegativeLoginTesti class'inda istedigimiz method'u
+                     calistirmak icin -->
                     <include name="yanlisEmailTesti"></include>
                 </methods>
             </class>
             <class name="tests.day16_SmokeTests.C02_NegativeLoginTesti">
-                <!-- day16_pacakage'indaki negatif login class'indaki
-             yanlisEmailTesti disindaki tum method'lari calistirmak istersek-->
-                <methods>
+              <!-- day16 pacakage'indaki negatif login class'indaki
+               yanlisEmailTesti disindaki tum method'lari calistirmak istersek-->
+                 <methods>
                     <exclude name="yanlisEmailTesti"></exclude>
-                </methods>
+                 </methods>
             </class>
         </classes>
-        
-        <!-- day16_pacakage'indaki negatif login class'indaki
-             yanlisEmailTesti disindaki tum method'lari calistirmak istersek-->
-        
-        
     </test>
 </suite>
